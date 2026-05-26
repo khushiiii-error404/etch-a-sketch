@@ -21,7 +21,10 @@ function randomcolor(){
 btn.addEventListener('click',(e)=>{
     container.textContent=""
     let input=prompt("Enter number of grids (Limit : 100)")
-
+    if (input>100 || input<0){
+        alert('Please enter a valid number');
+    }
+    else{
     const size = Math.floor(700/input);
     for(let i=0;i<input * input ;i++){
       const div=document.createElement("div");
@@ -35,4 +38,5 @@ btn.addEventListener('click',(e)=>{
       div.style.height=`${size}px`;
       div.style.boxSizing ='border-box';
       container.appendChild(div);
+    }
 }});
