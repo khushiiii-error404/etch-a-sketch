@@ -3,9 +3,9 @@ const container = document.querySelector("#container");
 
   for(let i=0;i<256;i++){
       const div=document.createElement("div");
-      let opacity =1;
+      let opacity =0.1;
       div.addEventListener('mouseenter', () => {
-      opacity -=0.1;
+      opacity +=0.1;
       div.style.background = randomcolor();
       div.style.opacity = opacity;
       });
@@ -28,9 +28,9 @@ btn.addEventListener('click',(e)=>{
     const size = Math.floor(700/input);
     for(let i=0;i<input * input ;i++){
       const div=document.createElement("div");
-      let opacity =1;
+      let opacity =0.1;
       div.addEventListener('mouseenter', () => {
-      opacity -=0.1;
+      opacity +=0.1;
       div.style.background = randomcolor();
       div.style.opacity = opacity;
       });
