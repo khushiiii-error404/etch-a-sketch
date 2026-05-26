@@ -1,0 +1,36 @@
+#container{
+    width: 700px;
+    height: 700px;
+    border: 2px solid rgb(255, 255, 255);
+    display : flex;
+    margin-left: 32%;
+    margin-top: 0px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+p{
+    text-align: center;
+    font-size: 50px;
+    font-family:"Playfair Display",serif ;
+    color: lavender;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.head{
+    display: flex;
+    height: 1%;
+    width:200px;
+    align-items: center;
+    gap: 60px;
+    margin-left: 40%;
+}
+
+button{
+    padding: 10px 30px ;
+    text-align: center;
+    border-radius: 30px;
+}
