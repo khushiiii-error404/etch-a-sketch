@@ -1,7 +1,7 @@
 const btn =document.querySelector("button");
 const container = document.querySelector("#container");
 
-  for(let i=1;i<256;i++){
+  for(let i=0;i<256;i++){
       const div=document.createElement("div");
       let opacity =1;
       div.addEventListener('mouseenter', () => {
@@ -21,8 +21,9 @@ function randomcolor(){
 btn.addEventListener('click',(e)=>{
     container.textContent=""
     let input=prompt("Enter number of grids (Limit : 100)")
-    const size = 700/input;
-    for(let i=1;i<input * input ;i++){
+
+    const size = Math.floor(700/input);
+    for(let i=0;i<input * input ;i++){
       const div=document.createElement("div");
       let opacity =1;
       div.addEventListener('mouseenter', () => {
