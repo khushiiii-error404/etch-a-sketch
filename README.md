@@ -1,0 +1,2 @@
+# ETCH A SKETCH
+A browser-based Etch-a-Sketch built using HTML, CSS, and JavaScript. Users can generate customizable grids and draw by hovering over cells, with random colors applied dynamically using DOM manipulation and event listeners.
